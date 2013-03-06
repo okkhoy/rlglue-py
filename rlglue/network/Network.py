@@ -86,7 +86,7 @@ kCharSize = 1
 
 kUnknownMessage = "Unknown Message: %s\n"
 
-class Network:
+class Network(object):
 	
 	def __init__(self):
 		self.sock = None

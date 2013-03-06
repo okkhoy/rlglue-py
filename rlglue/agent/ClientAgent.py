@@ -27,7 +27,7 @@ import rlglue.network.Network as Network
 from rlglue.types import Action
 from rlglue.types import Observation
 
-class ClientAgent:
+class ClientAgent(object):
 	kUnknownMessage = "Unknown Message: "
 	network = None
 	agent = None

@@ -25,7 +25,7 @@ from rlglue.types import Action
 from rlglue.types import Observation
 from rlglue.types import Reward_observation_terminal
 
-class Environment:
+class Environment(object):
 	# () -> string
 	def env_init():
 		pass

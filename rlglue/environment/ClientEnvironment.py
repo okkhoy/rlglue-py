@@ -22,7 +22,7 @@ import rlglue.network.Network as Network
 from rlglue.types import Action
 from rlglue.types import Observation
 
-class ClientEnvironment:
+class ClientEnvironment(object):
 	kUnknownMessage = "Unknown Message: "
 	network = None
 	env = None

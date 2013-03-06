@@ -24,7 +24,7 @@
 
 import copy
 
-class RL_Abstract_Type:
+class RL_Abstract_Type(object):
 	def __init__(self,numInts=None,numDoubles=None,numChars=None):
 		self.intArray = []
 		self.doubleArray = []
@@ -60,7 +60,7 @@ class Observation(RL_Abstract_Type):
 		RL_Abstract_Type.__init__(self,numInts,numDoubles,numChars)
 
 
-class Observation_action:
+class Observation_action(object):
 	def __init__(self,theObservation=None,theAction=None):
 		if theObservation != None:
 			self.o = theObservation
@@ -71,7 +71,7 @@ class Observation_action:
 		else:
 			self.a = Action()
 
-class Reward_observation_terminal:
+class Reward_observation_terminal(object):
 	def __init__(self,reward=None, theObservation=None, terminal=None):
 		if reward != None:
 			self.r = reward
@@ -86,7 +86,7 @@ class Reward_observation_terminal:
 		else:
 			self.terminal = False
 
-class Reward_observation_action_terminal:
+class Reward_observation_action_terminal(object):
 	def __init__(self,reward=None, theObservation=None, theAction=None, terminal=None):
 		if reward != None:
 			self.r = reward

@@ -23,7 +23,7 @@
 from rlglue.types import Action
 from rlglue.types import Observation
 
-class Agent:
+class Agent(object):
 	# (string) -> void
 	def agent_init(taskSpecification):
 		pass
