@@ -25,25 +25,25 @@ from rlglue.types import Observation
 
 class Agent(object):
 	# (string) -> void
-	def agent_init(taskSpecification):
+	def agent_init(self, taskSpecification):
 		pass
 	
 	# (Observation) -> Action
-	def agent_start(observation):
+	def agent_start(self, observation):
 		pass
 	
 	# (double, Observation) -> Action
-	def agent_step(reward, observation):
+	def agent_step(self, reward, observation):
 		pass
 	
 	# (double) -> void
-	def agent_end(reward):
+	def agent_end(self, reward):
 		pass
 	
 	# () -> void
-	def agent_cleanup():
+	def agent_cleanup(self):
 		pass
 
 	# (string) -> string
-	def agent_message(message):
+	def agent_message(self, message):
 		pass

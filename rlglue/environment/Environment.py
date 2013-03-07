@@ -27,21 +27,21 @@ from rlglue.types import Reward_observation_terminal
 
 class Environment(object):
 	# () -> string
-	def env_init():
+	def env_init(self):
 		pass
 	
 	# () -> Observation
- 	def env_start():
+ 	def env_start(self):
 		pass
 	
 	# (Action) -> Reward_observation_terminal
-	def env_step(action):
+	def env_step(self, action):
 		pass
 	
 	# () -> void
-	def env_cleanup():
+	def env_cleanup(self):
 		pass
 	
 	# (string) -> string
-	def env_message(message):
+	def env_message(self, message):
 		pass
